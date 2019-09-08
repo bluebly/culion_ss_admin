@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.loginHeader .loginText {
+  text-align: left;
+}
+
+.loginText > span {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 2.25em;
+  color: #337E9B;
+  font-weight: bold;
+  letter-spacing: 1pt;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 550px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin label,
+.form-signin .fa {
+  color: #337E9B;
+}
+
+.form-signin-header {
+  color: #337E9B;
+}
+
+.form-signin-body {
+  border: #337E9B 1px solid;
+  border-radius: 7px;
+}

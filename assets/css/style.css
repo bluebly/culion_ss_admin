@@ -1,0 +1,140 @@
+body {
+  overflow-y: scroll;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  35px; }
+.right-addon input { padding-right: 35px; }
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.pull-right {
+  float: right;
+}
+
+.bg-main {
+  background-color: #660973;
+}
+
+.table > tbody > tr {
+  cursor: pointer;
+}
+
+.table > thead > tr > th {
+  text-align: center;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #01aef0;
+}
+
+.tr-active {
+  background-color: #01aef0;
+}
+
+#spinner {
+  z-index: 1100;
+}
+
+.bd-spinner-lg .modal-dialog{
+  display: table;
+  position: relative;
+  margin: 0 auto;
+  top: calc(50% - 24px);
+}
+
+.bd-spinner-lg .modal-dialog .modal-content{
+  background-color: transparent;
+  border: none;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.border-right-primary {
+  border-right: solid 1px #660973;
+}
+
+.errorMsg {
+  display: none;
+}
+
+.header-label {
+  color: #337E9B;
+}
+
+/* Circular button */
+.btn-circle {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn-circle i {
+  position: relative;
+  top: -1px;
+}
+
+.btn-circle-sm {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+.btn-circle-lg {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 1.1rem;
+}
+
+.btn-circle-xl {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.3rem;
+}
+/* End of Circular button */
+
+#responseModal > .modal-dialog > .modal-content {
+  min-width: 316px;
+  max-width: 316px;
+}
+
+#responseModal > .modal-dialog > .modal-content > .modal-body {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+#responseIcon {
+  font-size: 4.333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}

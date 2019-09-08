@@ -3,6 +3,7 @@
   <head>
     <?php
       include('../includes/_common-styles.php');
+      include('../includes/_utilities.php');
     ?>
     <link rel="stylesheet" href="../assets/css/signin.css">
   </head>

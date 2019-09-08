@@ -1,8 +1,8 @@
 <?php
   include('../includes/_conn.php');
   function signin($conn, $username, $password) {
-    $queryResult = $conn->query("SELECT * FROM users WHERE username = '" .
-      $username . "' AND password = '" . $password . "'");
+    $queryResult = $conn->query("SELECT * FROM tbl_admin WHERE user_id = '" .
+      $username . "' AND password = AES_ENCRYPT('" . $password . "', 'pw')");
 
     $result = array();
 
@@ -18,7 +18,7 @@
       case 'SIGNIN':
         $success = signin($conn, $_POST['username'], $_POST['password']);
         $isValid = $success ? 'Y' : 'N';
-        $message = $success ? '' : 'Invalid credentials';
+        $message = $success ? '' : 'Invalid credentials!';
 
         $response = (object) array('isValid' => $isValid, 'message' => $message);
         echo json_encode($response);

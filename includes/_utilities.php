@@ -31,11 +31,13 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <p id="message"></p>
+      <div class="modal-body text-center">
+        <span id="responseIcon" class="fa fa-check mb-3"></span>
+        <h4 id="headerMessage" class="text-center"></h4>
+        <p id="message" class="text-center"></p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-info" id="ok-btn" data-dismiss="modal">OK</button>
+        <button type="button" class="btn btn-info" id="btnResponseOk" data-dismiss="modal">OK</button>
       </div>
     </div>
   </div>
@@ -44,8 +46,11 @@
 <!-- Spinner -->
 <div id="spinner" class="modal fade bd-spinner-lg" data-backdrop="static" data-keyboard="false" tabindex="-1">
   <div class="modal-dialog modal-sm">
-    <div class="modal-content" style="width: 48px">
-      <span class="fa fa-spinner fa-spin fa-3x"></span>
+    <div class="modal-content">
+      <div class="flex-row text-center">
+        <span style="width: 48px" class="fa fa-spinner fa-spin fa-3x mb-3"></span>
+        <h6 id="loadingText"></h6>
+      </div>
     </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 <?php
   try {
-    $conn = new mysqli("localhost", "root", "", "test");
+    $conn = new mysqli("localhost", "root", "", "culion");
     if ($conn) {
       // echo "Connection Successful";
     } else {
